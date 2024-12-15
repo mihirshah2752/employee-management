@@ -28,7 +28,7 @@
   }
 
   .modal-header {
-    @apply flex items-start justify-between p-5 border-b border-solid border-gray-200 rounded-t;
+    @apply flex items-start justify-center p-5 border-b border-solid border-gray-200 rounded-t;
   }
 
   .modal-footer {

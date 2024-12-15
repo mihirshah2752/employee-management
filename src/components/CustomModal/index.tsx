@@ -22,12 +22,12 @@ export const CustomModal: React.FC<CustomModalProps> = ({
       {showModal ? (
         <>
           <div className="modal">
-            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+            <div className=" w-auto m-6 max-w-3xl">
               {/*content*/}
               <div className="modal-content">
                 {/*header*/}
                 <div className="modal-header">
-                  <h3 className="text-3xl font-semibold">{title}</h3>
+                  <h3 className="text-xl text-center font-semibold">{title}</h3>
                 </div>
                 {/*body*/}
                 {!!body && <div className="relative p-6 flex-auto">{body}</div>}
