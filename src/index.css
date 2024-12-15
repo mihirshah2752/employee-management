@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-5 bg-[#16a34a] text-white font-semibold uppercase rounded-full shadow-md hover:bg-[#166534] focus:outline-none focus:ring focus:ring-green-400 focus:ring-opacity-75 ease-linear transition-all duration-150;
+  }
+
+  .btn-secondary {
+    @apply py-2 px-5 text-red-500 bg-none font-bold uppercase focus:outline-none rounded-full focus:ring focus:ring-red-400 focus:ring-opacity-75 ease-linear transition-all duration-150;
+  }
+
+  .td-default {
+    @apply px-6 py-4 text-sm text-gray-900;
+  }
+
+  .form-input {
+    @apply mt-2 px-3 py-3 text-gray-600 relative rounded text-sm  shadow outline-none focus:outline-none focus:ring w-full;
+  }
+
+  .modal {
+    @apply justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none;
+  }
+
+  .modal-content {
+    @apply border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none;
+  }
+
+  .modal-header {
+    @apply flex items-start justify-between p-5 border-b border-solid border-gray-200 rounded-t;
+  }
+
+  .modal-footer {
+    @apply flex items-center justify-end p-3 border-t border-solid border-gray-200 rounded-b;
+  }
+
+  .no-data {
+    @apply p-5 w-full bg-white text-center font-medium text-gray-500 uppercase tracking-wide
+  }
+}
