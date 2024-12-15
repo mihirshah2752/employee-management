@@ -38,8 +38,6 @@ export const Dashboard: React.FC<DashboardProps> = () => {
   const isLoading = useTypedSelector((state) => state.EmployeesReducer.loading);
   const error = useTypedSelector((state) => state.EmployeesReducer.error);
 
-  console.log(error);
-
   useEffect(() => {
     dispatch(EmployeesServices.getEmployeesList());
   }, [dispatch]);

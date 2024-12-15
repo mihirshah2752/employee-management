@@ -69,9 +69,7 @@ const deleteEmployee = createAsyncThunk(
   "employeesSlice/deleteEmployee",
   async (employeeId: number, thunkApi) => {
     try {
-      const response = await delEmployee(`/api/employee/${employeeId}`);
-      console.log('response', response);
-      
+      const response = await delEmployee(`/api/employee/${employeeId}`);      
       if (response?.success) {
         return thunkApi.fulfillWithValue(employeeId);
       } else {
@@ -139,9 +137,7 @@ const EmployeesSlice = createSlice({
           state.employees[index] = action.payload;
         }
       })
-      .addCase(updateEmployee.rejected, (state, action) => {
-        console.log('dfd',action.payload);
-        
+      .addCase(updateEmployee.rejected, (state, action) => {        
         state.loading = false;
         state.error = action.payload as string;
       });
