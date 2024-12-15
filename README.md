@@ -1,4 +1,4 @@
-# Employee Management
+# [Employee Management](https://mihirshah2752.github.io/employee-management/)
 
 This project was bootstrapped with 
 [Create React App](https://github.com/facebook/create-react-app)
